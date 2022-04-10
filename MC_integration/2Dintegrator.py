@@ -90,9 +90,11 @@ class Integrator():
 
         for _ in itertools.repeat(None, npoints):
 
+            point = self.GenPoint
+
             for sh in self.shapes:
 
-                if sh.is_inside(self.GenPoint):
+                if sh.is_inside(point):
 
                     total += 1
 
